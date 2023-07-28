@@ -58,7 +58,7 @@ case "$1" in
         esac
     ;;
     '-h'|'--help')
-        echo -e "Usage: note [OPTION]
+        echo -e "Usage: nota [OPTION]
 Write a time-stamped note to ~/.notes
 Ctrl+D to end note.
  -v, --view         view notes
@@ -70,7 +70,7 @@ Ctrl+D to end note.
      --version      display version"
     ;;
     '--version')
-        echo -e "note 0.1
+        echo -e "nota 0.1
 License GPLv3+: GNU GPL Version 3 or later
 This is free software: you are free to change and redistribute it.
 
@@ -80,7 +80,7 @@ Written by Eduardo Monteiro da Costa."
         echo "Invalid argument."
 esac
 
-# note
+# nota
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
