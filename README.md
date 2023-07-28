@@ -1,5 +1,5 @@
 # note
-Note taking program for the terminal\
+Note taking program for the terminal
 
 Usage: note [OPTION]\
 Write a time-stamped note to ~/.notes\
