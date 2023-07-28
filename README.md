@@ -1,7 +1,7 @@
-# note
+# nota
 Note taking program for the terminal
 
-Usage: note [OPTION]\
+Usage: nota [OPTION]\
 Write a time-stamped note to ~/.notes\
 Ctrl+D to end note.\
  -v, --view         view notes\
@@ -11,7 +11,7 @@ Ctrl+D to end note.\
  -h, --help         display this help menu\
      --version      display version"
 
-note 0.1\
+nota 0.1\
 License GPLv3+: GNU GPL Version 3 or later\
 This is free software: you are free to change and redistribute it.
 
