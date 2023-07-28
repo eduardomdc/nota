@@ -9,10 +9,10 @@ Ctrl+D to end note.\
  -w, --weather      add weather and location info to note from wttr.in, requires internet
      --purge        delete all notes\
  -h, --help         display this help menu\
-     --version      display version"\
+     --version      display version"
 
 note 0.1\
 License GPLv3+: GNU GPL Version 3 or later\
-This is free software: you are free to change and redistribute it.\
+This is free software: you are free to change and redistribute it.
 
-Written by Eduardo Monteiro da Costa.\
+Written by Eduardo Monteiro da Costa.
