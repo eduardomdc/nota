@@ -18,8 +18,8 @@ case "$1" in
         trap "rm -f -r $TMPDIR;exit 1" EXIT
 
         echo -e "${Green}Ctrl+D to end note"
-        echo -e "$Green$(date)$Reset">>$TMPFILE
-        echo -e "$(date)$Reset"
+        echo -e "$Green$(date +"%A at %T, %B%_d %Y")$Reset">>$TMPFILE
+        echo -e "$(date +"%A at %T, %B%_d %Y")$Reset"
         if [ "$1" == "-w" ] || [ "$1" == "--weather" ]
         then
             echo -e "${Cyan}Getting weather info...${Reset}"
@@ -31,6 +31,9 @@ case "$1" in
         echo -e "${Blue}~~~~~~~~~~~~~~~~~~~~$Reset\n" 
         echo -e "${Blue}~~~~~~~~~~~~~~~~~~~~$Reset\n" >>$TMPFILE
         #cat $TMPFILE >> ~/.notes
+        if [ ! -f "~/.notes" ]; then
+            touch ~/.notes
+        fi
         cat $TMPFILE | cat - ~/.notes > temp && mv temp ~/.notes
         rm -f -r $TMPDIR
     ;;
